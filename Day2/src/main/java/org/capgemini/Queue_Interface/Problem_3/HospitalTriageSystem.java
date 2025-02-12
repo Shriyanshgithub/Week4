@@ -35,7 +35,7 @@ public class HospitalTriageSystem {
 
 // Class representing a patient with a name and severity level
 class Patient {
-    // Patient's name
+    // Patient's names
     String name;
     // Severity level of the patient's condition
     int severity;
