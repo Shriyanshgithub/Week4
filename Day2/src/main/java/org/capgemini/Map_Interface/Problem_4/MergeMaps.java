@@ -2,6 +2,7 @@ package org.capgemini.Map_Interface.Problem_4;
 
 import java.util.*;
 
+
 public class MergeMaps {
     public static void main(String[] args) {
         // Example input maps
@@ -26,7 +27,15 @@ public class MergeMaps {
 
         // Merge map2 into the result
         for (Map.Entry<String, Integer> entry : map2.entrySet()) {
-            result.merge(entry.getKey(), entry.getValue(), Integer::sum);
+            String key = entry.getKey();
+            Integer value = entry.getValue();
+
+            // If the key already exists, add the values, otherwise put the new key-value pair
+            if (result.containsKey(key)) {
+                result.put(key, result.get(key) + value);
+            } else {
+                result.put(key, value);
+            }
         }
 
         return result;
