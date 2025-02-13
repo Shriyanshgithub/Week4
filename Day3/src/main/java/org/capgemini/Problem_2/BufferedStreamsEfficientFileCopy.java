@@ -6,7 +6,7 @@ package org.capgemini.Problem_2;
         Requirements:
         Read and write in chunks of 4 KB (4096 bytes).
         Use System.nanoTime() to measure execution time.
-        Compare execution time with unbuffered streams.*/
+        Compare execution times with unbuffered streams.*/
 
 import java.io.*;
 
