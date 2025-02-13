@@ -1,3 +1,14 @@
+/*
+ByteArray Stream - Convert Image to ByteArray
+📌 Problem Statement:
+Write a Java program that converts an image file into a byte array and then writes it back to another image file.
+Requirements:
+Use ByteArrayInputStream and ByteArrayOutputStream.
+Verify that the new file is identical to the original image.
+Handle IOException.
+
+ */
+
 package org.capgemini.Problem_5;
 
 import java.io.*;
@@ -6,8 +17,8 @@ import java.util.Arrays;
 public class ImageToByteArray {
     public static void main(String[] args) {
         // Paths for the original and new image files
-        String sourceImagePath = "source_image.jpg"; // Replace with the path to your source image
-        String newImagePath = "new_image.jpg";       // Replace with the path for the new image
+        String sourceImagePath = "source_image.jpg";
+        String newImagePath = "new_image.jpg";
 
         try {
             // Step 1: Convert image file to byte array
