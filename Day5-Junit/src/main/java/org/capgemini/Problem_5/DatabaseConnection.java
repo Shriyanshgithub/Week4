@@ -1,5 +1,6 @@
 package org.capgemini.Problem_5;
 
+//class DatabaseConnection
 public class DatabaseConnection {
     private boolean connected;
 
